@@ -1,0 +1,16 @@
+p {
+  color: red;
+}
+
+#important {
+  text-decoration: underline;
+  color: green;
+}
+
+.myStyle {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.highlight {
+  background-color: yellow;
+}
