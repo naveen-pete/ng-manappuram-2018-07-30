@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Customer Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row p-4">
+      <div class="col-4">
+        <h2>Customer Form</h2>
+        <div class="card  bg-light">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="txtName">Name</label>
+                <input type="text" class="form-control" id="txtName" placeholder="Enter name">
+                <small id="nameHelp" class="form-text text-muted">Name is required</small>
+              </div>
+        
+              <div class="form-group">
+                <label for="txtPhone">Phone</label>
+                <input type="text" class="form-control" id="txtPhone" placeholder="Enter phone">
+                <small id="phoneHelp" class="form-text text-muted">Phone is required</small>
+              </div>
+        
+              <div class="form-group">
+                  <label for="txtEmail">Email</label>
+                  <input type="text" class="form-control" id="txtEmail" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Email is required</small>
+                </div>
+        
+              <div class="form-group">
+                  <label for="txtCity">City</label>
+                  <input type="text" class="form-control" id="txtCity" placeholder="Enter city">
+                  <small id="cityHelp" class="form-text text-muted">City is required</small>
+              </div>
+        
+              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="reset" class="btn btn-warning">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h2>Customer List</h2>
+
+        <div class="card bg-light mb-3">
+          <h4 class="card-header">Name</h4>
+          <div class="card-body">
+            <h5 class="card-title">abc@xyz.com</h5>
+            <p class="card-text">Phone: 1234</p>
+            <p class="card-text">City: Thrissur</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning btn-sm">Delete</button>
+          </div>
+        </div>
+
+        <div class="card bg-light mb-3">
+          <h4 class="card-header">Name</h4>
+          <div class="card-body">
+            <h5 class="card-title">abc@xyz.com</h5>
+            <p class="card-text">Phone: 1234</p>
+            <p class="card-text">City: Thrissur</p>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-warning btn-sm">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
