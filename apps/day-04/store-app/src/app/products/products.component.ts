@@ -10,8 +10,6 @@ import { Product } from '../models/product';
 export class ProductsComponent {
   today = Date.now();
 
-  product: Product = new Product();
-
   products: Product[] = [
     {
       id: 1,
@@ -36,10 +34,16 @@ export class ProductsComponent {
     }
   ];
 
-  onSave() {
-    console.log('save clicked');
-    console.log('product:', this.product);
-    this.products.unshift(this.product);
-    this.product = new Product();
+  onDelete(product) {
+    const i = this.products.indexOf(product);
+    this.products.splice(i, 1);
+  }
+
+  onProductCreated(newProduct: Product) {
+    const lastItemIndex = this.products.length - 1;
+    const id = this.products.length > 0 ? this.products[lastItemIndex].id + 1 : 1 ;
+    newProduct.id = id;
+    console.log('products component:', newProduct);
+    this.products.push(newProduct);
   }
 }
