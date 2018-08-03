@@ -1,11 +1,12 @@
 <div class="container">
   <h3>Products</h3>
-  <div>Today's date: {{ today | date : 'full' | uppercase }}</div>
+  <div>Today's date: {{ today | date | uppercase }}</div>
   <div class="row">
     <div class="col-4">
       <h4>Product Form</h4>
 
-      <app-product-form (productCreated)="onProductCreated($event)"></app-product-form>
+      <!-- <app-product-form (productCreated)="onProductCreated($event)"></app-product-form> -->
+      <app-product-form></app-product-form>
     </div>
 
     <div class="col">
