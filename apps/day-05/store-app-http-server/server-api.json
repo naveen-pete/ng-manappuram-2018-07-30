@@ -41,6 +41,13 @@
       "price": 102,
       "isAvailable": false,
       "id": 7
+    },
+    {
+      "name": "p200",
+      "description": "p200 desc",
+      "price": 200,
+      "isAvailable": true,
+      "id": 8
     }
   ],
   "customers": [
